@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Tripathi Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS -->
+    <link rel="icon" href="favicon.ico"> <!-- Optional favicon -->
+    <!-- Font Awesome for LinkedIn and GitHub Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>    
+<body class="light-mode">
+
+    <!-- Background Ocean Wave Music -->
+    <audio id="background-audio" autoplay>
+        <source src="ocean-waves.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Floating Play/Pause Button -->
+    <button id="audio-control-btn" class="floating-audio-btn" aria-label="Toggle Music">
+        <i class="fas fa-volume-up"></i>
+    </button>
+
+<!-- Navigation -->
+    <header>
+        <ul class="navbar">
+            <li><a href="#home" data-tooltip="Home"><i class="fas fa-home"></i></a></li>
+            <li><a href="#about" data-tooltip="About"><i class="fas fa-user"></i></a></li>
+            <li><a href="#skills" data-tooltip="Skills"><i class="fas fa-cogs"></i></a></li>
+            <li><a href="#projects" data-tooltip="Projects"><i class="fas fa-project-diagram"></i></a></li>
+            <li><a href="#education" data-tooltip="Education"><i class="fas fa-graduation-cap"></i></a></li> 
+            <li><a href="#certifications" data-tooltip="Certifications"><i class="fas fa-certificate"></i></a></li>
+            <li><a href="#internships" data-tooltip="Internships"><i class="fas fa-briefcase"></i></a></li>
+            <li><a href="#contact" data-tooltip="Contact"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/theshubhamtripathi" target="_blank" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/theshubhamtripathi" target="_blank" data-tooltip="GitHub"><i class="fab fa-github"></i></a></li>
+            <li>
+                <button id="theme-toggle" class="theme-toggle-btn" data-tooltip="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </li>
+        </ul>
+    </header>
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="slideshow">
+        <div class="slide">
+            <img src="img1.gif" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <img src="img2.gif" alt="Slide 2">
+        </div>
+        <div class="slide">
+            <img src="img3.gif" alt="Slide 3">
+        </div>
+    </div>
+</section>
+
+
+    <div class="hero-content">
+      <h1 class="typewriter">Hi, I'm Shubham Tripathi!</h1>
+      <p class="typewriter">Learning and implementing new things</p>
+    </div>
+
+</section>
+
+    <!-- About Section -->
+<section id="about" class="about" style="width: 100%;">
+        <div class="about-container">
+            <!-- Image Section -->
+            <div class="about-image">
+                <img src="your-image-url.jpg" alt="Shubham Tripathi" />
+            </div>
+            <!-- Text Section -->
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>
+                    Hello, I’m Shubham Tripathi. 👋<br>
+                    I am currently a 2nd-year Computer Science Engineering (CSE Core) student at VIT Bhopal.<br>
+                    I have a strong passion for data structures and algorithms (DSA) 🔍. <br>
+                    I actively engage in the latest technology trends 💻, focusing on C++ and iOS/Swift development.<br>
+                    My curiosity also extends to astronomy 🌌, and I enjoy traveling ✈️ to explore new perspectives.<br>
+                    I’m always open to connecting with professionals and peers to collaborate on innovative projects. <br>
+                    Let’s connect and share insights! 🚀 <a href="https://www.linkedin.com/in/theshubhamtripathi" target="_blank">LinkedIn</a> for more details about my professional journey.<br>
+                </p>
+            </div>
+        </div>
+</section>
+    
+    <!-- GIF Section -->
+<section id="gif-section" class="gif-section">
+    <div class="gif-container">
+      <!-- GIF 1 -->
+      <div class="gif-card">
+        <img src="your-first-gif-url.gif" alt="GIF 1" />
+        <h3 class="gif-title">Exploring Creativity</h3>
+      </div>
+      <!-- GIF 2 -->
+      <div class="gif-card">
+        <img src="your-second-gif-url.gif" alt="GIF 2" />
+        <h3 class="gif-title">Innovative Coding</h3>
+      </div>
+    </div>
+  </section>
+  
+    
+    <!-- Cursor elements -->
+    <div class="cursor"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Skills Section -->
+    <section id="skills" style="width: 100%;">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <div class="skill" title="HTML"><i class="fab fa-html5"></i></div>
+            <div class="skill" title="CSS"><i class="fab fa-css3-alt"></i></div>
+            <div class="skill" title="JavaScript"><i class="fab fa-js"></i></div>
+            <div class="skill" title="C++"><i class="fas fa-code"></i></div>
+            <div class="skill" title="Java"><i class="fab fa-java"></i></div>
+            <div class="skill" title="C"><i class="fas fa-copyright"></i></div>
+            <div class="skill" title="Python"><i class="fab fa-python"></i></div>
+            <div class="skill" title="AI/ML"><i class="fas fa-robot"></i></div>
+            <div class="skill" title="Swift"><i class=" fab fa-swift"></i></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+<section id="projects" class="projects" style="width: 100%;">
+    <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Project 1: PINNACLE-LABS</h3>
+            <p>🎓 Pinnacle Labs C Programming Internship - Task Repository</p>
+            <a href="https://github.com/theshubhamtripathi/PINNACLE-LABS" target="_blank" class="btn">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 2: CODSOFT</h3>
+            <p>CODSOFT Internship Repository Java🎓🚀.</p>
+            <a href="https://github.com/theshubhamtripathi/CODSOFT" target="_blank" class="btn">View on GitHub</a>
+        </div>
+        
+</section>
+
+    <!-- Education Section -->
+<section id="education" style="width: 100%;">
+    <h2>Education</h2>
+    <div class="education-item">
+        <h2>Bachelor of Technology (B.Tech) in Computer Science Engineering</h2>
+        <p><strong>Institution:</strong> VIT Bhopal University</p>
+        <p><strong>Year of Graduation:</strong> 2027</p>
+        <p><strong>Grade:</strong> 9.07 CGPA</p>
+        <p><strong>Details:</strong> Currently pursuing a 2nd-year degree in Computer Science Engineering (CSE Core) with a focus on algorithms, data structures, and software development.</p>
+    </div>
+    <div class="education-item">
+        <h2>Intermediate</h2>
+        <p><strong>Institution:</strong> J T Golden Jubilee School</p>
+        <p><strong>Year of Graduation:</strong> 2022</p>
+        <p><strong>Details:</strong> Completed high school with a focus on physics, chemistry and mathematics securing top grades in subjects like Physics and Mathematics.</p>
+        <p><strong>Grade:</strong> 89 %</p>
+    </div>
+    <div class="education-item">
+        <h2>High School</h2>
+        <p><strong>Institution:</strong> J T Golden Jubilee School</p>
+        <p><strong>Year of Graduation:</strong> 2020</p>
+        <p><strong>Details:</strong> Completed high school with a focus on science, mathematics and humanities securing top grades in subjects like Physics and Mathematics.</p>
+        <p><strong>Grade:</strong> 89 %</p>
+    </div>
+    
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" style="width: 100%;">
+    <h2>Certifications</h2>
+    <div class="certifications-container">
+      <!-- Certificate 1 -->
+      <table>
+        <tr>
+          <td><div style="margin-left: 823px;" class="certificate-card glass-card">
+            <img style="width: 300px; height: 200px;" src="certificate1.png" alt="Certificate 1">
+            <div class="certificate-title">Matlab</div>
+        </td>
+          <td><div class="certificate-card glass-card">
+            <img style="width: 300px; height: 200px;" src="certificate2.png" alt="Certificate 2">
+            <div class="certificate-title">Fundamental of AI/ML</div>
+        </td>
+          <td><div class="certificate-card glass-card">
+            <img style="width: 300px; height: 200px;" src="certificate3.png" alt="Certificate 2">
+            <div class="certificate-title">Python Essentials</div>
+        </td>
+        </tr>
+        <tr>
+           <td><div style="margin-left: 823px;" class="certificate-card glass-card">
+              <img style="width: 300px; height: 200px;" src="certificate4.png" alt="Certificate 1">
+              <div class="certificate-title">SQL (Basic)</div>
+          </td>
+            <td><div class="certificate-card glass-card">
+              <img style="width: 300px; height: 200px;" src="certificate5.png" alt="Certificate 2">
+              <div class="certificate-title">Python (Basic)</div>
+          </td>
+            <td><div class="certificate-card glass-card">
+              <img style="width: 300px; height: 200px;" src="certificate6.png" alt="Certificate 2">
+              <div class="certificate-title">Problem Solving (Intermediate)</div>
+          </td>
+          </tr>
+          <tr>
+            <td><div style="margin-left: 823px;" class="certificate-card glass-card">
+              <img style="width: 300px; height: 200px;" src="certificate7.png" alt="Certificate 1">
+              <div class="certificate-title">Java (Basic)</div>
+          </td>
+            <td><div class="certificate-card glass-card">
+              <img style="width: 300px; height: 200px;" src="certificate8.png" alt="Certificate 2">
+              <div class="certificate-title">Intro to GEN AI</div>
+          </td>
+            <td><div class="certificate-card glass-card">
+              <img style="width: 300px; height: 200px;" src="certificate9.png" alt="Certificate 2">
+              <div class="certificate-title">Cloud Technology</div>
+          </td>
+          </tr>
+          <tr>
+          <td><div style="margin-left: 823px;" class="certificate-card glass-card">
+            <img style="width: 300px; height: 200px;" src="certificate10.png" alt="Certificate 1">
+            <div class="certificate-title">AI Bootcamp - for Marketing</div>
+        </td>
+          <td><div class="certificate-card glass-card">
+            <img style="width: 300px; height: 200px;" src="certificate11.png" alt="Certificate 2">
+            <div class="certificate-title">TCs - ion</div>
+        </td>
+          <td><div class="certificate-card glass-card">
+            <img style="width: 300px; height: 200px;" src="certificate12.png" alt="Certificate 2">
+            <div class="certificate-title">GEN AI Landscape</div>
+        </td>
+        </tr>
+        <tr>
+            <td><div style="margin-left: 823px;" class="certificate-card glass-card">
+              <img style="width: 300px; height: 200px;" src="certificate13.png" alt="Certificate 1">
+              <div class="certificate-title">Fundamentals of Data</div>
+          </td>
+            <td><div class="certificate-card glass-card">
+              <img style="width: 300px; height: 200px;" src="certificate14.png" alt="Certificate 2">
+              <div class="certificate-title">Fundamentals of AI</div>
+          </td>
+            <td><div class="certificate-card glass-card">
+              <img style="width: 300px; height: 200px;" src="certificate14.png" alt="Certificate 2">
+              <div class="certificate-title">Certificate Title 1</div>
+          </td>
+          </tr>
+      </table>
+    
+  </section>
+  <!-- Internships Section -->
+<section id="internships">
+    <h2>Internships</h2>
+    <div class="internships-container">
+        <!-- Internship 1 -->
+        <div class="internship-card glass-card">
+            <img src="offer_letter1.png" alt="Offer Letter 1">
+            <div class="internship-title">CodSoft Java Intern</div>
+        </div>
+
+        <div class="internship-card glass-card">
+            <img src="completion_certificate1.png" alt="Completion Certificate 1">
+            <div class="internship-title">Completion Certificate</div>
+        </div>
+        <!-- Internship 2 -->
+        <div class="internship-card glass-card">
+            <img src="offer_letter2.png" alt="Offer Letter 2">
+            <div class="internship-title">Pinnacle-Labs C Intern</div>
+        </div>
+       
+        <div class="internship-card glass-card">
+            <img src="completion_certificate2.png" alt="Completion Certificate 2">
+            <div class="internship-title">Completion Certificate</div>
+        </div>
+    </div>
+</section>
+
+  
+    <!-- Contact Section -->
+    <section id="contact" style="width: 100%;">
+        <h2>Contact Me</h2>
+        <form action="#">
+            <input type="text" placeholder="Your Name" required style="margin-left: -360px;height: 40px; width: 150px; border-radius: 15px; border: solid #6a1e55 1px;">
+            <input type="email" placeholder="Your Email" required style="height: 40px; width: 150px; border-radius: 15px; border: solid #6a1e55 1px;">
+            <textarea placeholder="Your Message" required style="margin-left: 400px;height: 40px; width: 150px; border-radius: 15px; border: solid #6a1e55 1px; float: left;" ></textarea ><br>    
+            <button type="submit" class="btn">Send</button style="height: 40px; width: 150px; border-radius: 15px; border: solid #6a1e55 1px;"  >
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer style="width: 100%;">
+        <p>© 2024 Shubham Tripathi. All rights reserved.</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/theshubhamtripathi" target="_blank" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/theshubhamtripathi" target="_blank" data-tooltip="GitHub"><i class="fab fa-github"></i></a></li>
+            <li><a href="mailto:theshubhamtripathi06@gmail.com" target="_blank" data-tooltip="Email"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="https://www.hackerrank.com/profile/theshubhamtripa1" target="_blank" data-tooltip="HackerRank"><i class="fab fa-hackerrank"></i></a></li>
+        </ul>
+    </footer>
+    <!-- Link to Your JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
