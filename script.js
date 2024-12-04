@@ -142,19 +142,25 @@ document.addEventListener("DOMContentLoaded", function () {
     showSlides(); // Initialize the slideshow
 });
 const audio = document.getElementById("background-audio");
-        const audioControlBtn = document.getElementById("audio-control-btn");
-        const audioIcon = audioControlBtn.querySelector("i");
+const audioControlBtn = document.getElementById("audio-control-btn");
+const audioIcon = audioControlBtn.querySelector("i");
 
-        audioControlBtn.addEventListener("click", () => {
-            if (audio.paused) {
-                audio.play();
-                audioIcon.classList.replace("fa-volume-up", "fa-volume-mute");
-            } else {
-                audio.pause();
-                audioIcon.classList.replace("fa-volume-mute", "fa-volume-up");
-            }
-        });
-        
+// Enable autoplay by starting muted and unmuting when the button is clicked
+audio.play().catch(() => {
+    // Catch autoplay rejection and handle it gracefully
+    console.log("Autoplay blocked by browser; will require user interaction to start audio.");
+});
+
+audioControlBtn.addEventListener("click", () => {
+    if (audio.muted) {
+        audio.muted = false; // Unmute the audio
+        audioIcon.classList.replace("fa-volume-mute", "fa-volume-up");
+    } else {
+        audio.muted = true; // Mute the audio
+        audioIcon.classList.replace("fa-volume-up", "fa-volume-mute");
+    }
+});
+
 // Ensure the page starts at the home section on reload
 document.addEventListener("DOMContentLoaded", function () {
     // Remove any existing hash to reset scroll position
