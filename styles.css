@@ -1517,38 +1517,43 @@ body.light-mode .about-image img {
     position: relative;
 }
 
-/* Base Slideshow Styles */
+/* Base Styles for Hero Section */
 .hero {
     position: relative;
     width: 100%;
     height: 100vh; /* Full viewport height */
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slideshow {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
     height: 100%;
-    animation: slide 15s infinite; /* Add a sliding animation if needed */
 }
 
 .slide img {
-    width: 100%; /* Ensure the image covers the container */
-    height: 100%; /* Stretch to container height */
+    width: 100%; /* Ensure image stretches fully */
+    height: 100%; /* Stretch image to container height */
     object-fit: cover; /* Maintain aspect ratio */
-    transition: filter 0.3s, opacity 0.3s; /* Smooth transition for dark mode */
+    transition: filter 0.3s ease, opacity 0.3s ease; /* Smooth transition */
 }
 
-/* Light Mode */
+/* Light Mode - Normal Appearance */
 :root {
     --dim-opacity: 1; /* Fully visible in light mode */
-    --dim-filter: none; /* No dimming in light mode */
+    --dim-brightness: 1; /* No dimming in light mode */
 }
 
-/* Dark Mode */
+.slide img {
+    filter: brightness(var(--dim-brightness));
+    opacity: var(--dim-opacity);
+}
+
+/* Dark Mode - Dimming Effect */
 [data-theme="dark"] .slide img {
-    filter: brightness(0.6); /* Dims the image */
-    opacity: 0.9; /* Adds slight transparency */
+    --dim-brightness: 0.6; /* Reduce brightness for dimming effect */
+    --dim-opacity: 0.9; /* Slight transparency for darker effect */
 }
